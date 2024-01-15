@@ -8,8 +8,15 @@ packages = [{include = "man_dep_poetry"}]
 license = "MIT"
 
 [tool.poetry.dependencies]
-python = "^3.8"
+python = ">=3.9"
+requests = "^2.31.0"
+pandas = "^2.1.4"
 
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.12.1"
 
 [build-system]
 requires = ["poetry-core"]
