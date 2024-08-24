@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "learning"
+name = "hypermodern-python"
 version = "0.1.0"
 description = "Continuous learning using Jolowicz articles."
 authors = ["Leonardo Galler <leonardo.galler@l2-analytics.com>"]
@@ -18,3 +18,6 @@ where = ["src"]
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+hypermodern-python = "hypermodern_python.console:main"
