@@ -25,7 +25,8 @@ Install needed software:
 ## Features
 
 - Dependency management with Poetry
-- Feature 2
+- Consuming a REST API with Requests
+- 
 
 ## Contributing
 

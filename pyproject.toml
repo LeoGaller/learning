@@ -6,8 +6,9 @@ authors = ["Leonardo Galler <leonardo.galler@l2-analytics.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.7"
+python = "^3.8"
 click = "^8.1.7"
+requests = "^2.32.3"
 
 [tool.setuptools]
 package-dir = {"" = "src"}
