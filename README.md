@@ -38,14 +38,14 @@ MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Contact
 
-Created by L2 Analytics(https://l2-analytics.com) - feel free to contact me!
+Created by [L2 Analytics](https://l2-analytics.com) - feel free to contact me!
 
 ## Acknowledgments
 
 - Thanks to God for inspiration.
 
 ## Important 
-- (Choose a License)[https://choosealicense.com/]
+- [Choose a License](https://choosealicense.com/)
 - Replace `hypermodern-python` with the name of your own repository, to avoid a name collision on 
 PyPI.
 - A virtual environment gives your project an isolated runtime environment, consisting of a specific
@@ -54,5 +54,5 @@ PyPI.
  you’re working on.
 
 ## Reference
-1. (Hypermodern Python)[https://cjolowicz.github.io/posts/hypermodern-python-01-setup/]
+1. [Hypermodern Python](https://cjolowicz.github.io/posts/hypermodern-python-01-setup/)
 2. 
