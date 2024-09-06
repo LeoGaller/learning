@@ -49,6 +49,12 @@ fine-grained test cases make it easier to figure out why the test suite failed w
    1. *Tests for a feature or bugfix should be written before implementation. This is also known as “writing a failing 
    test". The reason for this is that it provides confidence that the tests are actually testing something, and do not 
    simply pass because of a flaw in the tests themselves.*
+   2. The mock_requests_get fixture is now used by two test modules. You could move it to a separate module and import 
+   from there, but Pytest offers a more convenient way: Fixtures placed in a conftest.py file are discovered 
+   automatically, and test modules at the same directory level can use them without explicit import.
+   3. Using fakes: Fake implementations are a good alternative to mock objects, which can be too forgiving when faced 
+   with wrong usage, and too tightly coupled to implementation details of the system under test (witness the 
+   mock_requests_get fixture).
 
 ## Contributing
 
@@ -88,3 +94,4 @@ by passing the --reuse-existing-virtualenvs (-r) option
 1. https://docs.pytest.org/en/latest/explanation/fixtures.html
 2. https://coverage.readthedocs.io/en/7.6.1/
 3. https://nox.thea.codes/en/stable/
+4. [Using Fakes] https://cjolowicz.github.io/posts/hypermodern-python-02-testing/#:~:text=your%20terminal%20emulator).-,Using,-fakes
