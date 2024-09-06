@@ -29,6 +29,7 @@ Install needed software:
 - Dependency management with Poetry
 - Consuming a REST API with Requests
 - PyTest
+- Unit Tests
 - 
 ## Important concepts
 1. The file __init__.py is empty and serves to declare the test suite as a package. While this is not strictly necessary, 
@@ -42,6 +43,12 @@ effectiveness of tests. It can show which parts of your code are being exercised
 Install it with the pytest-cov plugin, which integrates Coverage.py with pytest.
 4. Automate tests in multiple unvironments. Nox == is a command-line tool that automates testing in multiple Python 
 environments, similar to tox. Unlike tox, Nox uses a standard Python file for configuration.
+5. Unit tests should be fast, isolated, and repeatable. The unittest.mock standard library allows you to replace parts 
+of your system under test with mock objects. You should generally have a single assertion per test case, because more 
+fine-grained test cases make it easier to figure out why the test suite failed when it does.
+   1. *Tests for a feature or bugfix should be written before implementation. This is also known as “writing a failing 
+   test". The reason for this is that it provides confidence that the tests are actually testing something, and do not 
+   simply pass because of a flaw in the tests themselves.*
 
 ## Contributing
 

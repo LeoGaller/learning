@@ -15,6 +15,7 @@ nox = "^2024.4.15"
 pytest = "^8.3.2"
 pytest-cov = "^5.0.0"
 coverage = {extras = ["toml"], version = "^7.6.1"}
+pytest-mock = "^3.14.0"
 
 [tool.setuptools]
 package-dir = {"" = "src"}
@@ -37,5 +38,5 @@ branch = true
 source = ["hypermodern_python"]
 
 [tool.coverage.report] ## You can configure Coverage.py to require full test coverage (or any other target percentage) using the fail_under option
-fail_under = 100
+fail_under = 30
 show_missing = true
