@@ -30,7 +30,9 @@ Install needed software:
 - Consuming a REST API with Requests
 - PyTest
 - Unit Tests
-- 
+- Linting
+-
+
 ## Important concepts
 1. The file __init__.py is empty and serves to declare the test suite as a package. While this is not strictly necessary, 
 it allows your test suite to mirror the source layout of the package under test, even when modules in different parts of
@@ -55,6 +57,11 @@ fine-grained test cases make it easier to figure out why the test suite failed w
    3. Using fakes: Fake implementations are a good alternative to mock objects, which can be too forgiving when faced 
    with wrong usage, and too tightly coupled to implementation details of the system under test (witness the 
    mock_requests_get fixture).
+6. Linting is the process of analyzing source code for potential errors, stylistic issues, or other problems that could 
+impact the quality, readability, or functionality of the code. It is typically performed by specialized tools called 
+linters, which parse and examine code to detect issues like syntax errors, improper formatting, unused variables, or 
+code that does not adhere to specified coding standards.
+
 
 ## Contributing
 
@@ -66,11 +73,12 @@ MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Contact
 
-Created by [L2 Analytics](https://l2-analytics.com) - feel free to contact me!
+Updated by [L2 Analytics](https://l2-analytics.com) - feel free to contact me!
 
 ## Acknowledgments
 
-- Thanks to God for inspiration.
+- Thanks to God for energy.
+- Thanks Claudio Jolowicz for creating it.
 
 ## Important 
 - [Choose a License](https://choosealicense.com/)
@@ -84,14 +92,18 @@ PyPI.
 must be installed using pip in the local environment.
 -- Nox recreates the virtual environments from scratch on each invocation (a sensible default). You can speed things up 
 by passing the --reuse-existing-virtualenvs (-r) option
+- Linting with [Flake8](https://flake8.pycqa.org/en/latest/)
 
 ## Reference
 1. [Hypermodern Python](https://cjolowicz.github.io/posts/hypermodern-python-01-setup/)
 2. [Hypermodern Python 02 Testing](https://cjolowicz.github.io/posts/hypermodern-python-02-testing/)
-3. 
+3. [Hypermodern Python 03 Linting](https://cjolowicz.github.io/posts/hypermodern-python-03-linting/)
 
 ## Support Knowledge
 1. https://docs.pytest.org/en/latest/explanation/fixtures.html
 2. https://coverage.readthedocs.io/en/7.6.1/
 3. https://nox.thea.codes/en/stable/
 4. [Using Fakes] https://cjolowicz.github.io/posts/hypermodern-python-02-testing/#:~:text=your%20terminal%20emulator).-,Using,-fakes
+
+## Where to restart?
+---> [Here](https://cjolowicz.github.io/posts/hypermodern-python-03-linting/#:~:text=in%20later%20sections.-,Code%20formatting%20with%20Black,-The%20next%20addition)
